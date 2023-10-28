@@ -40,10 +40,6 @@ def process_pdf_to_excel():
         worksheet = workbook.active
 
     for question, answer in fields.items():
-        # if question:
-        #     if " Text Box" in fields[question]:
-        #         fields[question] -= " Text Box"
-
         if answer:
             if answer.strip() and answer.strip().lower() != 'no':
 
